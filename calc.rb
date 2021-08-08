@@ -75,4 +75,12 @@ RSpec.describe Calculator do
       expect(result).to eq(-20)
     end
   end
+  describe'#divide' do
+    it 'shoudl return the quotent of two numbers' do
+      calculator = Calculator.new
+      result = calculator.divide(4,2)
+      expect(result).to eq(2)
+    end
+  end
+  
 end
