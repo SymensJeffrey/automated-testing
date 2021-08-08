@@ -40,4 +40,39 @@ RSpec.describe Calculator do
       expect(result).to eq(-2)
     end
   end
+  describe '#subtract' do
+    it 'should return the difference of two numbers' do
+      calculator = Calculator.new
+      result = calculator.subtract(5,2)
+      expect(result).to eq(3)
+    end
+  end
+  describe '#subtract' do
+    it 'should work with negative numbers' do
+      calculator = Calculator.new
+      result = calculator.subtract(-5,-2)
+      expect(result).to eq(-3)
+    end
+  end
+  describe'#multiply' do
+    it 'should return the product of two number' do
+      calculator = Calculator.new
+      result = calculator.multiply(4,5)
+      expect(result).to eq(20)
+    end
+  end
+  describe'#multiply' do
+    it 'should work with negative numbers' do
+      calculator = Calculator.new
+      result = calculator.multiply(-4,-5)
+      expect(result).to eq(20)
+    end
+  end
+  describe'#multiply' do
+    it 'should work with a negative and a positive number' do
+      calculator = Calculator.new
+      result = calculator.multiply(4,-5)
+      expect(result).to eq(-20)
+    end
+  end
 end
